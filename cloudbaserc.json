@@ -1,0 +1,79 @@
+{
+  "$schema": "https://static.cloudbase.net/cli/cloudbaserc.schema.json",
+  "envId": "cloudbase-d5gioeybt3ae71f68",
+  "functionRoot": "cloudfunctions",
+  "functions": [
+    {
+      "name": "login",
+      "timeout": 20,
+      "memorySize": 512,
+      "runtime": "Nodejs20.19",
+      "handler": "index.main",
+      "installDependency": true,
+      "description": "登录 / 用户信息 / 统计"
+    },
+    {
+      "name": "review",
+      "timeout": 20,
+      "memorySize": 512,
+      "runtime": "Nodejs20.19",
+      "handler": "index.main",
+      "installDependency": true,
+      "description": "复习队列 / 答题 / 打卡 / 知识网（核心云函数）"
+    },
+    {
+      "name": "library",
+      "timeout": 20,
+      "memorySize": 512,
+      "runtime": "Nodejs20.19",
+      "handler": "index.main",
+      "installDependency": true,
+      "description": "书库列表 / 详情 / 进度 / 领取"
+    },
+    {
+      "name": "medal",
+      "timeout": 20,
+      "memorySize": 512,
+      "runtime": "Nodejs20.19",
+      "handler": "index.main",
+      "installDependency": true,
+      "description": "勋章墙 / 打卡 / 勋章配置"
+    },
+    {
+      "name": "upload",
+      "timeout": 30,
+      "memorySize": 512,
+      "runtime": "Nodejs20.19",
+      "handler": "index.main",
+      "installDependency": true,
+      "description": "碎片上传 / 额度扣减 / 投稿审核"
+    },
+    {
+      "name": "aiService",
+      "timeout": 60,
+      "memorySize": 1024,
+      "runtime": "Nodejs20.19",
+      "handler": "index.main",
+      "installDependency": true,
+      "description": "AI 能力：组网/技巧/易错/解析/出题/批改/碎片增强/TTS"
+    },
+    {
+      "name": "admin",
+      "timeout": 20,
+      "memorySize": 512,
+      "runtime": "Nodejs20.19",
+      "handler": "index.main",
+      "installDependency": true,
+      "description": "后台：教材审核 / 总览 / 角色管理"
+    },
+    {
+      "name": "share",
+      "timeout": 20,
+      "memorySize": 512,
+      "runtime": "Nodejs20.19",
+      "handler": "index.main",
+      "installDependency": true,
+      "description": "书籍分享：生成分享链接 / 读取好友分享的内容"
+    }
+  ]
+}

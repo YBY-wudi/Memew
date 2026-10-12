@@ -1,0 +1,9 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "咪猫爱背诵 云函数",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "~4.0.2"
+  }
+}
